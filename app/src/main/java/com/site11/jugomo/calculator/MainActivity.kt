@@ -111,4 +111,17 @@ class MainActivity : AppCompatActivity() {
         editText.setText(finalNumber.toString())
         isNewOp = true
     }
+
+    fun btPercent(view: View ){
+        val number: Double = editText.text.toString().toDouble() / 100
+
+        editText.setText(number.toString())
+        isNewOp = true
+    }
+
+    fun btClean(view: View) {
+        editText.setText("0")
+        isNewOp = true
+    }
+
 }
